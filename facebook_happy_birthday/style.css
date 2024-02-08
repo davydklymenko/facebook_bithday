@@ -11,6 +11,7 @@ body {
 
 
 .header {
+    background-color: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,4 +74,79 @@ body {
 .icon .line3 {
     top: auto;
     bottom: 24px;
+}
+
+main {
+    padding: 30px;
+}
+
+#h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start h1 {
+    position: absolute;
+    margin-bottom: 123px;
+    text-align: center;
+}
+
+.start ul {
+    margin-top: 50px;
+}
+
+.container_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.info {
+    height: 800px;
+    width: 1400px;
+    box-shadow: 1px 2px 5px rgb(58, 58, 58);
+}
+
+.h1_h {
+    font-size: 40px;
+    text-align: center;
+}
+
+.info img {
+    position: relative;
+    border-radius: 10px;
+    height: 500px;
+    width: 610px;
+    left: 28%;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.cards {
+    position: absolute;
+    padding-top: 2900px;
+}
+
+.thanks_container {
+    position: absolute;
+    padding-top: 2900px;
+}
+
+#footer {
+    position: absolute;
+    padding-top: 2900px;
+}
+
+.f_2004 {
+    position: absolute;
+    padding-top: 2900px;
 }
