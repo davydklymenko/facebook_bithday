@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+.header {
+    font-family: 'Jost', sans-serif;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(140, 140, 140);
+}
+
+.header img {
+    height: 55px;
+    width: 55px;
+    margin: 0 auto ;
+}
+
+.header li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.header li:nth-child(1) {
+    order: -1; 
+}
+
+.header li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 50px;
+}
+
+.icon {
+    background-color: #FFF;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 0 30px;
+    margin-top: 10px;
+}
+
+.icon:focus {
+    outline: 0;
+}
+
+.icon .line {
+    background-color: rgb(0, 140, 255);
+    height: 1px;
+    width: 20px;
+    position: absolute;
+    top:10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+    top: auto;
+    bottom: 14px;
+}
+
+.icon .line3 {
+    top: auto;
+    bottom: 24px;
+}
+
+@media (max-width: 1300px) {
+    .header {
+        font-family: 'Jost', sans-serif;
+        background-color: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 95px;
+        width: 64rem;
+        box-shadow: 1px 1px 10px rgb(140, 140, 140);
+    } 
+}
+
+@media (max-width: 800px) {
+    .header {
+        font-family: 'Jost', sans-serif;
+        background-color: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 25px;
+        width: 74rem;
+        box-shadow: 1px 1px 10px rgb(140, 140, 140);
+    } 
+}

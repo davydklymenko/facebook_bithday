@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+#footer {
+    font-family: 'Jost', sans-serif;
+    padding: 2rem;
+    background-color: rgb(10, 10, 92);
+    color: #FFF;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer h1 {
+    text-align: center;
+}
+
+#footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#footer i {
+    margin: 0 50px;
+    text-decoration: none;
+}
+
+#footer p {
+    text-align: center;
+}
