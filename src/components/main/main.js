@@ -7,9 +7,9 @@ function Main() {
         <h1 id="h1">Happy Birhday, Facebook!</h1>
         <div className="start">
             <h1>News:</h1>
-            <ul>On Feb, 4, 2024 the Facebook has a 20 years old!</ul>
-               <ul>The Mark Zuckerberg is uploaded the photo about the Facebook in 2004.</ul>
-               <ul>Let's see how Facebook has been in 2004.⬇</ul>
+               <ul>On February 4 2024 Facebook has a 20 years old!</ul>
+               <ul>Mark Zuckerberg was uploaded photo about Facebook in 2004</ul>
+               <ul>Let's see how Facebook was in 2004 ⬇</ul>
         </div>
 
         <h1 className="h1_h">History of Facebook:</h1>
@@ -72,8 +72,8 @@ function Main() {
         <div className="thanks_container">
             <img src="https://store-images.s-microsoft.com/image/apps.16054.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.07640ca7-c177-4ef3-8d87-b4b06865f65b?h=576"
                 alt="now"></img>
-                <h2 id="h2">Thanks for reading Facebook Birthday Article!
-                    We are really hope to listen your vote list about this site. Write on orusya22@gmail.com!
+                <h2 id="h2">Thanks for reading Facebook Birthday Site!
+                    We are already to listen your vote about this site. Write on orusya22@gmail.com!
                 </h2>
         </div>
      </main>

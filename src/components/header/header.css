@@ -11,28 +11,36 @@
     box-shadow: 1px 1px 10px rgb(140, 140, 140);
 }
 
-.header img {
+img {
     height: 55px;
     width: 55px;
     margin: 0 auto ;
 }
 
-.header li {
+li {
     list-style: none;
     font-size: 20px;
+    transition: 0.3s;
 }
 
-.header li:nth-child(1) {
+li:nth-child(1) {
     order: -1; 
 }
 
-.header li a {
+li a {
     text-decoration: none;
     color: black;
     padding: 0 50px;
 }
 
-.icon {
+li a:hover {
+    color: gray;
+}
+
+/* Menu Icon */
+
+.menu {
+    display: none;
     background-color: #FFF;
     border: 0;
     cursor: pointer;
@@ -43,11 +51,11 @@
     margin-top: 10px;
 }
 
-.icon:focus {
+.menu:focus {
     outline: 0;
 }
 
-.icon .line {
+.menu .line {
     background-color: rgb(0, 140, 255);
     height: 1px;
     width: 20px;
@@ -57,38 +65,79 @@
     transition: transform 0.6s linear;
 }
 
-.icon .line2 {
+.menu .line2 {
     top: auto;
     bottom: 14px;
 }
 
-.icon .line3 {
+.menu .line3 {
     top: auto;
     bottom: 24px;
 }
 
-@media (max-width: 1300px) {
-    .header {
-        font-family: 'Jost', sans-serif;
-        background-color: #FFF;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 95px;
-        width: 64rem;
-        box-shadow: 1px 1px 10px rgb(140, 140, 140);
-    } 
+/* Close Menu Icon */
+
+
+.close .line {
+    background-color: rgb(0, 140, 255);
+    height: 1px;
+    width: 20px;
+    position: absolute;
+    top:10px;
+    left: 5px;
+    transition: transform 0.6s linear;
 }
 
-@media (max-width: 800px) {
-    .header {
-        font-family: 'Jost', sans-serif;
-        background-color: #FFF;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 25px;
-        width: 74rem;
-        box-shadow: 1px 1px 10px rgb(140, 140, 140);
-    } 
+.close .line2 {
+    transform: rotate(45%);
+}
+
+
+/* Dropdown Menu */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    left: 2.1rem;
+    height: 0;
+    top: 65px;
+    width: 300px;
+    background: rgb(14, 96, 228);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 150px;
+}
+
+.dropdown_menu li {
+    display: none;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a {
+    color: #FFF;
+}
+
+.dropdown_menu li a:hover {
+    color: #d2d2d2;
+}
+
+/* Responsive Design */
+
+@media (max-width: 992px){
+    .header li {
+        display: none;
+    }
+
+    .header .menu {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
 }
