@@ -22,16 +22,13 @@ class Header extends Component {
                 <header>
                     <div className="header">
                         {isMenuOpen ? (
-                            <button className="close" id="toggle" onClick={this.handleToggleMenu}>
-                                <div className="line line1"></div>
-                                <div className="line line2"></div>
-                            </button>
+                            <div className="menu-close">
+                                <i onClick={this.handleToggleMenu} className="fa-solid fa-xmark" style={{color: '#0e60e4'}}></i>
+                            </div>
                         ) : (
-                            <button className="menu" id="toggle" onClick={this.handleToggleMenu}>
-                                <div className="line line1"></div>
-                                <div className="line line2"></div>
-                                <div className="line line3"></div>
-                            </button>
+                            <div className="menu-close">
+                               <i onClick={this.handleToggleMenu} className="fa-solid fa-bars" style={{color: '#0e60e4'}}></i>
+                            </div>
                         )}
 
                         <li><a href="#">Home</a></li>
