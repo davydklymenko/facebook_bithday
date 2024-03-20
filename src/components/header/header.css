@@ -39,7 +39,7 @@ li a:hover {
 
 /* Menu Icon */
 
-i {
+.header i {
     display: none;
     cursor: pointer;
     position: relative;
@@ -49,7 +49,7 @@ i {
     margin-top: 10px;
 }
 
-i:focus {
+.header i:focus {
     outline: 0;
 }
 
@@ -72,7 +72,6 @@ i:focus {
 }
 
 .dropdown_menu li {
-    display: none;
     padding: 0.7rem;
     display: flex;
     align-items: center;
@@ -80,6 +79,7 @@ i:focus {
 }
 
 .dropdown_menu li a {
+    display: none;
     color: #FFF;
 }
 
@@ -98,7 +98,8 @@ i:focus {
         display: block;
     }
 
-    .dropdown_menu {
+    .dropdown_menu, .dropdown_menu li a {
         display: block;
     }
+    
 }
