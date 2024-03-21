@@ -53,6 +53,7 @@ main {
 }
 
 .info p {
+    padding: 10px;
     font-size: 20px;
 }
 
@@ -70,6 +71,11 @@ main {
     box-shadow: 1px 2px 5px rgb(58, 58, 58);
     padding: 10px;
 } 
+
+.card img {
+    height: 350px;
+    width: 440px;
+}
 
 .f_2004 {
     position: relative;
@@ -178,4 +184,19 @@ main {
         margin-top: 4rem;
     }
     
+}
+
+@media (max-width: 1815px) {
+    .card img {
+        height: 500px;
+        width: 650px;
+    }
+}
+
+
+@media (max-width: 1168px) {
+    .card img {
+        height: 200px;
+        width: 250px;
+    }
 }
